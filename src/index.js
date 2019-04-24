@@ -26,7 +26,7 @@ const getUrl = prod => {
 
 const writeURLFile = url => {
     const content = `
-export default const url = "${url}";
+export const url = "${url}";
 `;
 
     fs.writeFileSync("src/url.ts", content);
@@ -34,7 +34,7 @@ export default const url = "${url}";
 
 module.exports = bundler => {
     bundler.on('buildStart', async files => {
-        const prod = process.env.NODE_ENV;
+        const prod = process.env.NODE_ENV === 'production';
         const url = getUrl(prod);
         writeURLFile(url);
     });
