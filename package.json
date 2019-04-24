@@ -1,0 +1,26 @@
+{
+    "name": "@kloudsoftware/parcel-plugin-url",
+    "version": "1.0.0",
+    "description": "Parcel plugin to set an url for the http client based on NODE_ENV",
+    "main": "lib/index.js",
+    "source": "src/index.js",
+    "scripts": {
+        "build": "microbundle"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chromstahl-cms/parcel-plugin-url.git"
+    },
+    "author": "Kloudsoftware",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/chromstahl-cms/parcel-plugin-url/issues"
+    },
+    "homepage": "https://github.com/chromstahl-cms/parcel-plugin-url#readme",
+    "devDependencies": {
+        "microbundle": "^0.11.0"
+    },
+    "dependencies": {
+        "dotenv": "^7.0.0"
+    }
+}
