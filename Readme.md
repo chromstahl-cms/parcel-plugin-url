@@ -4,7 +4,7 @@ Adds the possibillty to set a url for reaching e.g. an api differently in prod a
 
 ## How to use
 
-- run npm i -D @kloudsoftware/parcel-plugin-url
+- run `npm i -D @kloudsoftware/parcel-plugin-url`
 - create an `api.json` file:
 ```json
 {
