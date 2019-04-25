@@ -36,6 +36,9 @@ export const url = document.location.protocol + "//api." + document.location.hos
 
 module.exports = bundler => {
     bundler.on('buildStart', async files => {
+        if (fs.existsSync("src/url.ts")) {
+            return;
+        }
         const prod = process.env.NODE_ENV === 'production';
         const url = getUrl(prod);
         writeURLFile(url, prod);

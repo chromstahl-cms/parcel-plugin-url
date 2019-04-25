@@ -1,6 +1,6 @@
 {
     "name": "@kloudsoftware/parcel-plugin-url",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Parcel plugin to set an url for the http client based on NODE_ENV",
     "main": "lib/index.js",
     "source": "src/index.js",
